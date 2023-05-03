@@ -6,6 +6,7 @@ const port = process.env.PORT || 5000;
 app.use(cors());
 
 const chefs = require("./api/chefs.json");
+const testimonials = require("./api/testimonials.json");
 
 app.get("/", (req, res) => {
   res.send({ title: "Welcome API" });
@@ -21,6 +22,10 @@ app.get("/chefs/:id", (req, res) => {
     let chef = chefs.find((chef) => chef.id === id);
     res.send(chef || { warning: "The ID is not existing in the server." });
   }
+});
+
+app.get("/testimonials", (req, res) => {
+  res.send(testimonials);
 });
 
 app.listen(port, () => {

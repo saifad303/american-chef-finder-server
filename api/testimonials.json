@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "avatar": "https://api.uifaces.co/our-content/donated/xZ4wg2Xj.jpg",
+    "name": "Martin escobar",
+    "title": "Food Consultant at Alinea (Chicago, IL)",
+    "quote": "The personalized recommendations on this site helped me land my dream job."
+  },
+  {
+    "id": 2,
+    "avatar": "https://randomuser.me/api/portraits/men/46.jpg",
+    "name": "Simon andrew",
+    "title": "Executive Chef at Per Se (New York, NY)",
+    "quote": "This website made finding my next chef job a breeze."
+  },
+  {
+    "id": 3,
+    "avatar": "https://randomuser.me/api/portraits/men/86.jpg",
+    "name": "Micheal worin",
+    "title": "Head Chef at Le Bernardin (New York, NY)",
+    "quote": "I highly recommend this site to any chef looking for new job opportunities."
+  }
+]
