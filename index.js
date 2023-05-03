@@ -15,6 +15,14 @@ app.get("/chefs", (req, res) => {
   res.send(chefs);
 });
 
+app.get("/chefs/:id", (req, res) => {
+  const id = JSON.parse(req.params.id);
+  if (id) {
+    let chef = chefs.find((chef) => chef.id === id);
+    res.send(chef || { warning: "The ID is not existing in the server." });
+  }
+});
+
 app.listen(port, () => {
   console.log(`The chef finder server is running on PORT = ${port}`);
 });
