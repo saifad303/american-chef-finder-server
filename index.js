@@ -5,8 +5,14 @@ const port = process.env.PORT || 5000;
 
 app.use(cors());
 
+const chefs = require("./api/chefs.json");
+
 app.get("/", (req, res) => {
   res.send({ title: "Welcome API" });
+});
+
+app.get("/chefs", (req, res) => {
+  res.send(chefs);
 });
 
 app.listen(port, () => {
