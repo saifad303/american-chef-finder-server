@@ -7,6 +7,7 @@ app.use(cors());
 
 const chefs = require("./api/chefs.json");
 const testimonials = require("./api/testimonials.json");
+const qna = require("./api/faq.json");
 
 app.get("/", (req, res) => {
   res.send({ title: "Welcome API" });
@@ -26,6 +27,10 @@ app.get("/chefs/:id", (req, res) => {
 
 app.get("/testimonials", (req, res) => {
   res.send(testimonials);
+});
+
+app.get("/qna", (req, res) => {
+  res.send(qna);
 });
 
 app.listen(port, () => {
